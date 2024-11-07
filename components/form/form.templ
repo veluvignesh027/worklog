@@ -1,0 +1,18 @@
+package form
+
+templ UserStoryForm() {
+    <h2> Create User Story</h2>
+	<div class="form">
+        <div class="title">
+		<form hx-post="/add-user-story" hx-swap="beforeend" hx-target="#contents">
+			<input
+				id="title"
+				name="title"
+				type="text"
+			/>
+			<input id="assignee" type="text"/>
+			<button type="submit">Create story</button>
+		</form>
+		</div>
+	</div>
+}

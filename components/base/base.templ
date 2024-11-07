@@ -1,0 +1,28 @@
+package base
+
+import (
+    "example.com/vb/components/side-nav-bar"
+)
+templ BaseStyles() {
+    .contents-div{
+        
+    }
+}
+
+templ Base(title string, icon string) {
+    <!DOCTYPE html>
+    <html lang="en">
+ 
+    <head>
+        <title> {title} </title>
+        <link rel="icon" type="image/png" href={icon}>
+        <!-- HTMX & CSS -->
+        <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        @sidenavbar.NavStyle()
+    </head>
+    
+    @sidenavbar.SideNavigationBar(icon)
+   
+    </html>
+}

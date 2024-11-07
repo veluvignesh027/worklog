@@ -1,0 +1,116 @@
+<style>
+  *{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: "Raleway", sans-serif;
+  }
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .center button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #40c518;
+    background: #08be82;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    padding: 20px 30px;
+    background: #a7d695;
+    color: #070707;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .form h2{
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0px 20px;
+    font: 25px;
+  }
+  .form .closebtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #3edb3e;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .form .form-element{
+    margin: 15px 0px;    
+  }
+  .form .form-element label{
+    font-size: 14px;
+    color: #222;
+  }
+  
+  .form .form-element input[type="text"],
+  .form .form-element input[type="date"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+
+  .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #40c518;
+    cursor: pointer;
+  }
+
+  .form h2{
+    color: #0c0c0c;
+    border-color: #070707;
+    border: 2px 5px;
+  }
+
+</style>
+
+
+
+	<div class="form">
+    <h2> Create User Story</h2>
+        <div class="form-element">
+          <label for="title">Title</label>
+          <input id="title" type="text" name="title" placeholder="Enter a title for the ticket">
+        </div>
+        <div class="form-element">
+          <label for="due-date">Due-Date</label>
+          <input id="due-date" type="date" name="due-date" placeholder="DD/MM/YYYY">
+        </div>
+        <div class="form-element">
+          <label for="assignee">Assignee</label>
+          <input id="assignee" type="text" name="assignee" placeholder="Name of the assignee">
+        </div>
+        <div class="form-element">
+          <button >
+            Create Story
+          </button>
+        </div>
+	</div>
